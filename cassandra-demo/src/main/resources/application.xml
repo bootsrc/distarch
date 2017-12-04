@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cassandra="http://www.springframework.org/schema/data/cassandra"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/data/cassandra
+    http://www.springframework.org/schema/data/cassandra/spring-cassandra-1.0.xsd
+    http://www.springframework.org/schema/data/cassandra/spring-cql.xsd
+    http://www.springframework.org/schema/data/cassandra/spring-cql-1.0.xsd
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+    ">
+
+    <!-- 引入属性文件 -->
+    <context:property-placeholder location="classpath:cassandra.properties"/>
+
+    <!-- 自动扫描(自动注入) -->
+    <context:component-scan base-package="org.flylib"/>
+
+    <!-- 注解方式配置事物 -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- spring-cassandra -->
+    <!--<cassandra:cluster contact-points="${cassandra_contactpoints}" port="${cassandra_port}"-->
+                       <!--username="${cassandra_username}" password="${cassandra_password}" />-->
+    <cassandra:cluster contact-points="${cassandra_contactpoints}" port="${cassandra_port}" />
+
+    <!-- 当前使用scheam -->
+    <cassandra:session keyspace-name="${cassandra_keyspace}"/>
+
+    <!-- orm -->
+    <cassandra:mapping/>
+
+    <!-- 类型转换 -->
+    <cassandra:converter/>
+
+    <!-- cassandra operater -->
+    <!--<cassandra:template id="cqlTemplate"/>-->
+
+    <cassandra:template id="cassandraTemplate"/>
+
+    <!-- spring data 接口 -->
+    <cassandra:repositories base-package="org.flylib.cassandrademo.repository"/>
+
+</beans>
