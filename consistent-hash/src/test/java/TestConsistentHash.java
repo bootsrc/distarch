@@ -31,7 +31,7 @@ public class TestConsistentHash {
 //        hash.setAlg(HashAlgorithm.LUA_HASH);
 //    	hash.set(1024);
 //    	hash.setAlg(HashAlgorithm.CRC32_HASH);
-        hash.buildHashCycle();
+        hash.buildHashCircle();
 
         long start = System.currentTimeMillis();
 

@@ -32,7 +32,7 @@ public class ConsistentHash {
     /**
      * 构建一致性HASH环
      */
-    public void buildHashCycle() {
+    public void buildHashCircle() {
         if (nodeSet == null) return;
         for (Node node : nodeSet) {
             for (int i = 0; i < virtualNum; i++) {
