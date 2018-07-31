@@ -21,3 +21,10 @@ flylib创立的各种常见的架构技术
 
 比如弹性伸缩（动态扩容） 
 redis存储节点的增加和减少的时候，可以把需要迁移和hash()值的变化量做到最小。
+
+
+如果您愿意捐助一下项目，可以通过微信/支付宝捐助哟~
+
+|支付宝         | 微信           | 余额宝领红包|
+| ------------- |:-------------:|:-------------:|
+| ![](https://github.com/flylib/fly-arch/blob/master/alipay.png)      | ![](https://github.com/flylib/fly-arch/blob/master/wechat.png) | ![](https://github.com/flylib/fly-arch/blob/master/redPacket.png) |
