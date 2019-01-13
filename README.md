@@ -7,9 +7,9 @@ Java高级编程中的利器(英文Sword，指的是" 宝剑", 像宝剑一样�
 
 | 序号         | 项目名称           | 简介      |
 | ------------- |:-------------:|:-------------:|
-|  1   | [consistent-hash](https://github.com/flylib/sword/tree/master/consistent-hash) | 一致性哈希的入门示例， 可以实现分布式存储 |
-|  2   | [cassandra-demo](https://github.com/flylib/sword/tree/master/cassandra-demo) | cassandra列存储数据库的入门 |
-|  3   | [sword-springboot](https://github.com/flylib/sword/tree/master/sword-springboot) | AppContextHolder(可获取到ApplicationContext) |
+|  1   | [consistent-hash](https://github.com/liushaoming/sword/tree/master/consistent-hash) | 一致性哈希的入门示例， 可以实现分布式存储 |
+|  2   | [cassandra-demo](https://github.com/liushaoming/sword/tree/master/cassandra-demo) | cassandra列存储数据库的入门 |
+|  3   | [sword-springboot](https://github.com/liushaoming/sword/tree/master/sword-springboot) | AppContextHolder(可获取到ApplicationContext) |
 
 <br/>
 详细介绍
