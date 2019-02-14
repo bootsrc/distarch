@@ -1,6 +1,6 @@
 # distarch
 
-Java分布式系统架构
+Java分布式系统架构. 分布式架构, Distributed Architecture, 这里简称distarch.
 
 ## 子项目列表
 
