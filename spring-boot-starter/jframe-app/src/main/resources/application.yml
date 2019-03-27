@@ -1,0 +1,8 @@
+server:
+  port: 29001
+
+jframe:
+  service:
+    enabled: true
+    prefix: ppp
+    suffix: sss
